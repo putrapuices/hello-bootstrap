@@ -2,7 +2,8 @@
 // import './App.css';
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
-import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar} from "react-bootstrap";
+import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar
+,Card} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -111,6 +112,22 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
   </ButtonGroup>
   </ButtonToolbar>
   </Col>
+</Row>
+<Row>
+  <Col>
+  <Card style={{width: '18rem'}} >
+  <Card.Img src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/sate.png' variant='top' />
+  <Card.Body>
+    <Card.Title>Card Title</Card.Title>
+    <Card.Text>
+       Some quick example text to build on the card title and make up the bulk of the card's content.
+    </Card.Text>
+    <Button variant='primary'>Go Somewhere</Button>
+  </Card.Body>
+</Card>
+  </Col>
+  <Col>Kolom 2</Col>
+  <Col>Kolom 3</Col>
 </Row>
 </Container>
     );
