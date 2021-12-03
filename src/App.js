@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
 import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar
-,Card,Carousel,Dropdown} from "react-bootstrap";
+,Card,Carousel,Dropdown,Form} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -160,6 +160,32 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
     <Dropdown.Item href="/">Ikan</Dropdown.Item>
   </Dropdown.Menu>
 </Dropdown>
+<br/>
+<br/>
+<Form>
+  <Form.Group>
+    <Form.Label>Nama</Form.Label>
+    <Form.Control type="text" placeholder="Masukan Nama" />
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Email Address</Form.Label>
+    <Form.Control type="email" placeholder="Masukan Email" />
+    <Form.Text className="text-muted">
+      Kami tidak akan menyalah gunkan email kamu
+    </Form.Text>
+  </Form.Group>
+  <Form.Group>
+    <Form.Label>Password</Form.Label>
+    <Form.Control type="password" placeholder="Masukkan Password" />
+    
+  </Form.Group>
+  <Form.Group>
+        <Form.Check type="checkbox" label="Kami Setujui" />
+  </Form.Group>
+  <Button variant="primary" type="submit">Submit</Button>
+
+</Form>
+
   </Col>
   <Col>Kolom 3</Col>
 </Row>
