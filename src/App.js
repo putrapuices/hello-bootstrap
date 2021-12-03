@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
 import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar
-,Card,Carousel,Dropdown,Form, InputGroup,FormControl} from "react-bootstrap";
+,Card,Carousel,Dropdown,Form, InputGroup,FormControl,Image} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -194,6 +194,8 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
    </InputGroup.Prepend>
    <FormControl placeholder="Username"/>
  </InputGroup>
+
+ <Image src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/foodsmall.jpg' alt='gambar' roundedCircle />
   </Col>
 </Row>
 </Container>
