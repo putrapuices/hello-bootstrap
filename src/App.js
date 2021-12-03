@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
 import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar
-,Card} from "react-bootstrap";
+,Card,Carousel} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -44,6 +44,29 @@ class App extends Component {
   <Breadcrumb.Item href='/'>Library</Breadcrumb.Item>
   <Breadcrumb.Item active>Profile</Breadcrumb.Item>
 </Breadcrumb>
+<Carousel>
+  <Carousel.Item>
+  <img className='d-block w-100' src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel1.jpeg' alt='1' />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img className='d-block w-100' src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel2.png' alt='1' />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+  <Carousel.Item>
+    <img className='d-block w-100' src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg' alt='1' />
+    <Carousel.Caption>
+      <h3>First slide label</h3>
+      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+    </Carousel.Caption>
+  </Carousel.Item>
+</Carousel>
       <Row>
   <Col>
     <Media>
