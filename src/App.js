@@ -2,7 +2,7 @@
 // import './App.css';
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
-import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb} from "react-bootstrap";
+import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -95,6 +95,21 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
     </Button>
   <Col>
   <Button variant='primary'>Tombol</Button>
+  <ButtonToolbar aria-label="Toolbar with button groups" aria-label="First group">
+  <ButtonGroup className='ml-2'>
+  <Button>1</Button>
+  <Button>2</Button>
+  <Button>3</Button>
+  <Button>4</Button>
+  <Button>5</Button>
+</ButtonGroup>
+<ButtonGroup className="me-2" aria-label="Second group">
+    <Button>5</Button> <Button>6</Button> <Button>7</Button>
+  </ButtonGroup>
+  <ButtonGroup aria-label="Third group">
+    <Button>8</Button>
+  </ButtonGroup>
+  </ButtonToolbar>
   </Col>
 </Row>
 </Container>
