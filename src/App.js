@@ -94,6 +94,7 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
     Profile <Badge variant="light">9</Badge>
     </Button>
   <Col>
+  <Button variant='primary'>Tombol</Button>
   </Col>
 </Row>
 </Container>
