@@ -63,7 +63,7 @@ class App extends Component {
     <img className='d-block w-100' src='https://s3-ap-southeast-1.amazonaws.com/niomic/img/sample/travel3.jpeg' alt='1' />
     <Carousel.Caption>
       <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <p>hghghgh uNu123lla vitae elit libero, a pharetra augue mollis interdum.</p>
     </Carousel.Caption>
   </Carousel.Item>
 </Carousel>
