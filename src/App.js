@@ -2,7 +2,7 @@
 // import './App.css';
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
-import {Container,Row,Col,Media, Alert} from "react-bootstrap";
+import {Container,Row,Col,Media, Alert,Badge, Button} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -80,6 +80,14 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
 <Row>
   <Col>
   <Alert variant="primary">User yang kamu masukkan salah</Alert>
+  </Col>
+  <h5>
+  <Badge variant="secondary">Benar</Badge>
+  </h5>
+  <Button variant = "primary"  >
+    Profile <Badge variant="light">9</Badge>
+    </Button>
+  <Col>
   </Col>
 </Row>
 </Container>
