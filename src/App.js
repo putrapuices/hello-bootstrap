@@ -3,7 +3,7 @@
 import React, { Component } from 'react';
 // import { Button } from 'react-bootstrap';
 import {Container,Row,Col,Media, Alert,Badge, Button,Breadcrumb,ButtonGroup,ButtonToolbar
-,Card,Carousel} from "react-bootstrap";
+,Card,Carousel,Dropdown} from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
 
@@ -149,7 +149,18 @@ Enim irure elit labore irure aecat nostrud. Mollit nostrud veniam est cillum tem
   </Card.Body>
 </Card>
   </Col>
-  <Col>Kolom 2</Col>
+  <Col>
+  <Dropdown>
+  <Dropdown.Toggle variant='success'>
+    Pilih Menu
+  </Dropdown.Toggle>
+  <Dropdown.Menu>
+    <Dropdown.Item href="/">Sate</Dropdown.Item>
+    <Dropdown.Item href="/">Ayam</Dropdown.Item>
+    <Dropdown.Item href="/">Ikan</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown>
+  </Col>
   <Col>Kolom 3</Col>
 </Row>
 </Container>
