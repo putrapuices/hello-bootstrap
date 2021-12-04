@@ -28,6 +28,7 @@ import {
   Navbar,
   OverlayTrigger,
   Popover,
+  Pagination,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -340,6 +341,13 @@ class App extends Component {
             >
               <Button variant="success">Munculkan Overlay</Button>
             </OverlayTrigger>
+            <br />
+            <br />
+            <Pagination size="lg">
+              <Pagination.Item>1</Pagination.Item>
+              <Pagination.Item Active>2</Pagination.Item>
+              <Pagination.Item>3</Pagination.Item>
+            </Pagination>
           </Col>
         </Row>
       </Container>
