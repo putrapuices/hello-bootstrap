@@ -29,6 +29,7 @@ import {
   OverlayTrigger,
   Popover,
   Pagination,
+  ProgressBar,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -348,6 +349,8 @@ class App extends Component {
               <Pagination.Item Active>2</Pagination.Item>
               <Pagination.Item>3</Pagination.Item>
             </Pagination>
+            <br />
+            <ProgressBar now={75} label="75%" />
           </Col>
         </Row>
       </Container>
