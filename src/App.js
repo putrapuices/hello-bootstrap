@@ -30,6 +30,7 @@ import {
   Popover,
   Pagination,
   ProgressBar,
+  Table,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -353,6 +354,31 @@ class App extends Component {
             <ProgressBar now={75} label="75%" />
           </Col>
         </Row>
+
+        <Table striped bordered hover>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>Nama</th>
+              <th>Menu</th>
+              <th>Harga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>Nasi Goreng</td>
+              <td>Makanan</td>
+              <td>20.000</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>Mie Goreng</td>
+              <td>Makanan</td>
+              <td>15.000</td>
+            </tr>
+          </tbody>
+        </Table>
       </Container>
     );
   }
