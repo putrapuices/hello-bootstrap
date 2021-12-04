@@ -31,6 +31,8 @@ import {
   Pagination,
   ProgressBar,
   Table,
+  Tabs,
+  Tab,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -105,7 +107,17 @@ class App extends Component {
             <Nav.Link>Contact</Nav.Link>
           </Nav.Item>
         </Nav>
-
+        <Tabs defaultActiveKey="about">
+          <Tab eventKey="home" title="home">
+            <p>Halaman home</p>
+          </Tab>
+          <Tab eventKey="about" title="about">
+            <p>Halaman about</p>
+          </Tab>
+          <Tab eventKey="contact" title="contact">
+            <p>Halaman contact</p>
+          </Tab>
+        </Tabs>
         <Carousel>
           <Carousel.Item>
             <img
