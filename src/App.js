@@ -24,6 +24,7 @@ import {
   Jumbotron,
   ListGroup,
   Modal,
+  Nav,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -64,6 +65,18 @@ class App extends Component {
           <Breadcrumb.Item href="/">Library</Breadcrumb.Item>
           <Breadcrumb.Item active>Profile</Breadcrumb.Item>
         </Breadcrumb>
+        <Nav>
+          <Nav.Item>
+            <Nav.Link>Home</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>About</Nav.Link>
+          </Nav.Item>
+          <Nav.Item>
+            <Nav.Link>Contact</Nav.Link>
+          </Nav.Item>
+        </Nav>
+
         <Carousel>
           <Carousel.Item>
             <img
@@ -288,7 +301,8 @@ class App extends Component {
                 <p>Modal Body Here</p>
               </Modal.Body>
               <Modal.Footer>
-                <Button>Close</Button>
+                <Button variant="secondry">Close</Button>
+                <Button variant="primary">Save Change</Button>
               </Modal.Footer>
             </Modal.Dialog>
           </Col>
