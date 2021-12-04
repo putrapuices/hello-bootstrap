@@ -33,6 +33,7 @@ import {
   Table,
   Tabs,
   Tab,
+  Collapse,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -60,6 +61,12 @@ import {
 // export default App;
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      buka: true,
+    };
+  }
   render() {
     const munculpopover = (
       <Popover title="informasi">
@@ -391,6 +398,18 @@ class App extends Component {
             </tr>
           </tbody>
         </Table>
+
+        <Button
+          variant="primary"
+          onClick={() => {
+            this.setState({ buka: !this.state.buka });
+          }}
+        >
+          Click
+        </Button>
+        <Collapse in={this.state.buka}>
+          <p>Show paragraph</p>
+        </Collapse>
       </Container>
     );
   }
