@@ -25,6 +25,7 @@ import {
   ListGroup,
   Modal,
   Nav,
+  Navbar,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -60,6 +61,25 @@ class App extends Component {
       // </div>
 
       <Container>
+        <Navbar bg="dark" variant="dark">
+          <Navbar.Brand>Menu</Navbar.Brand>
+          <Nav>
+            <Nav.Item>
+              <Nav.Link>Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>About</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link>Contact</Nav.Link>
+            </Nav.Item>
+          </Nav>
+          <Form inline>
+            <Form.Control placeholder="search" className="mr-sm-2" />
+            <Button>Search</Button>
+          </Form>
+        </Navbar>
+
         <Breadcrumb>
           <Breadcrumb.Item href="/">Home</Breadcrumb.Item>
           <Breadcrumb.Item href="/">Library</Breadcrumb.Item>
