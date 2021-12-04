@@ -26,6 +26,8 @@ import {
   Modal,
   Nav,
   Navbar,
+  OverlayTrigger,
+  Popover,
 } from "react-bootstrap";
 // import Media from 'react-bootstrap/Media';
 
@@ -54,12 +56,16 @@ import {
 
 class App extends Component {
   render() {
+    const munculpopover = (
+      <Popover title="informasi">
+        This is popover astikan triggernya benar
+      </Popover>
+    );
     return (
       // <div className='container'>
       //   <Button varian='primary'>Testing</Button>
       //   <h1>Hello Bootstrap</h1>
       // </div>
-
       <Container>
         <Navbar bg="dark" variant="dark">
           <Navbar.Brand>Menu</Navbar.Brand>
@@ -326,7 +332,15 @@ class App extends Component {
               </Modal.Footer>
             </Modal.Dialog>
           </Col>
-          <Col>Kolom 3</Col>
+          <Col>
+            <OverlayTrigger
+              // trigger="click" //jika triggernya tidak harus di klik maka di comment saja
+              placement="right"
+              overlay={munculpopover}
+            >
+              <Button variant="success">Munculkan Overlay</Button>
+            </OverlayTrigger>
+          </Col>
         </Row>
       </Container>
     );
